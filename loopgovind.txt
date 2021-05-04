@@ -1,0 +1,39 @@
+0. Import header files/ modules.
+  Python:  import math
+  C++:         #include<iostream>
+         #include<cmath>
+
+1.Display a user-friendly message about the intention
+  Python:print("FINDING INRADIUS AND CIRCUMRADIUS OF A TRIANGLE")
+  C++:        cout<<"FINDING INRADIUS AND CIRCUMRADIUS OF A TRIANGLE"
+
+2.Get the 3 sides of the triangle, separately
+     Python: side1 = float(input("length of side 1: "))
+         side2 = float(input("length of side 2: "))
+         side3 = float(input("length of side 3: "))
+  C++:         cout<<"length of side 1: ";
+         cin>>side1 ;
+         cout<<"length of side 2: ";
+         cin>>side2 ;
+         cout<<"length of side 3: ";
+         cin>>side3 ;
+
+3. Calculate semiperimeter, area, inradius and circumradius separately
+      Python: semi = (side1+side2+side3)/2
+        area = math.sqrt(semi*(semi-side1)*(semi-side2)*semi-side3))
+        inradius = (area/semi)
+        circumradius = (side1*side2*side3/(4 * area))
+  C++:       semi = (side1+side2+side3)/2
+        area = sqrt(semi*(semi-side1)*(semi-side2)*(semi-side3))
+      inradius = (area/semi)
+        circumradius = (side1*side2*side3/(4 * area))
+
+
+4. Display area, inradius and circumradius
+
+  Python:   print ('area = ', area)
+         print ('CIRCUMRADIUS =' , circumradius)
+         print ('INRADIUS =' , inradius)
+  C++:          cout<<"area= "<<area ;
+         cout<<"CIRCUMRADIUS = "<<circumradius ;
+         cout<"INRADIUS = "<<inradius ;
